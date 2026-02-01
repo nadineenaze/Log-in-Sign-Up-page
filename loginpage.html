@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+
+  <body class="min-h-screen bg-[#f6fffb] flex items-center justify-center p-10">
+    <!-- LOGIN WRAPPER -->
+    <div
+      class="relative w-[740px] h-[480px] rounded-2xl overflow-hidden shadow-xl"
+    >
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url(pink1.jpg)"
+      ></div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-pink-100/50"></div>
+
+      <!-- Card -->
+      <div class="relative z-50 flex items-center justify-center h-12/12">
+        <div class="bg-white w-240px rounded-3xl p-10">
+          <h1 class="text-center text-2xl font-extrabold text-pink-500 mb-8">
+            Log In
+          </h1>
+
+          <!-- EMAIL -->
+          <label class="block text-sm text-pink-400 mb-1">Email</label>
+          <input
+            type="email"
+            placeholder="Name@email.com"
+            class="w-full mb-6 px-6 py-3 rounded-xl border border-pink-300 outline-none focus:ring-2 focus:ring-pink-300"
+          />
+
+          <!-- PASSWORD -->
+          <label class="block text-sm text-pink-300 mb-1">Password</label>
+          <div class="relative mb-8">
+            <input
+              type="password"
+              placeholder="********"
+              class="w-full px-5 py-3 pr-12 rounded-xl border border-pink-300 outline-none focus:ring-2 focus:ring-pink-300"
+            />
+
+            <img
+              src="hide1.png"
+              alt="toggle password"
+              class="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer opacity-65 hover:opacity-35"
+            />
+          </div>
+
+          <!-- BUTTON -->
+          <button
+            class="w-full py-3 rounded-xl bg-pink-400 text-white font-semibold hover:opacity-90 transition"
+          >
+            Login Now
+          </button>
+
+          <p class="text-center text-sm text-pink-300 mt-6">
+            Don't have an account?
+            <a
+              href="signup.html"
+              class="text-pink-600 underline font-semibold cursor-pointer"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
